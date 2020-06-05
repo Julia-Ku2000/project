@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <img class="header-img" src="images/header-center.jpg">
+        <header>
+            <img src="images/header-ornL.gif">
+            <h1>Заказ театральных программок</h1>
+            <img src="images/header-ornL.gif">
+        </header>
+        <% if (user) { %>
+            <div class="sign-out">
+                <button><a href="/auth/logout/">Выход</a></button>
+            </div>
+            <% } else { %>  
+            <div class="sign-in">
+                <button>Вход</button>
+            </div>
+        <% } %>
+        <div class="about-methods">
+            <img src="images/faces.jpg">
+            <button class="more"><a href="#">Узнать больше о критериях расчета</a></button>
+        </div>
+        <% if (user) { %>
+            <div class="settlement-system">
+                <img src="images/many.jpg">
+                <button class="more"><a href="/methods">Cистема расчета</a></button>
+            </div>
+        <% } %>
+        <%- body %>
+    </div>
+    <div id="methods" class="modal">
+        <div id="method-one">
+            <h2>Критерий Вальда</h2>
+            <p><span>Критерий Вальда (максиминный критерий)</span> — один из критериев принятия решений в условиях неопределённости. Критерий крайнего пессимизма.
+                По критерию Вальда за оптимальную принимается стратегия, которая в наихудших условиях гарантирует максимальный выигрыш. Критерий Вальда ориентирует статистику на самые неблагоприятные условия.
+            </p>
+        </div>
+        <div class="method-two">
+            <h2>Критерий Сэвиджа</h2>
+            <p><span>Критерий Сэвиджа</span> — один из критериев принятия решений в условиях неопределённости. Условиями неопределённости считается ситуация, когда последствия принимаемых решений неизвестны, и можно лишь приблизительно их оценить. Для принятия решения используются различные критерии, задача которых — найти наилучшее решение максимизирующее возможную прибыль и минимизирующее возможный убыток.
+            </p>
+        </div>
+        <div class="method-three">
+            <h2>Критерий Гурвица</h2>
+            <p><span>Критерий устойчивости Гурвица</span> — один из способов анализа линейной стационарной динамической системы на устойчивость, разработанный немецким математиком Адольфом Гурвицом. Достоинством метода является принципиальная простота, недостатком - необходимость выполнения операции вычисления определителя, которая связана с определенными вычислительными тонкостями (например, для больших матриц может появиться значительная вычислительная ошибка).        
+            </p>
+        </div>
+    </div>
+    <div id="login-form" class="modal">
+        <form action="/auth/login/" method="post">
+            <input type="text" id="email" name="email" required autofocus placeholder="Почта"><br>
+            <input type="password" id="password" name="password" required placeholder="Пароль">
+            <button class="login-button" type="submit">Вход</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="javascripts/common.js" type="text/javascript"></script> 
+    <%- script %>
+</body>
+</html>

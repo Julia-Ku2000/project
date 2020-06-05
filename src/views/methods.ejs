@@ -1,0 +1,44 @@
+<%- contentFor('body') %>
+<div class="method-wrapper">
+    <div class="description">
+        <p><span>Назначение сервиса:</span><br> c помощью сервиса можно выбрать оптимальную стратегию, используя критерий Вальда,Cэвиджа и Гурвица</p>
+    </div>
+    <img class="frame" src="images/content-frame.png">
+    <div class="instruction">
+        <p>Внимание!Данный расчет ведется по следующими исходным данным:</p>
+        <ul>
+            <li>Стоимость заказа <%= ORDER_PRICE %> р + <%= PROGRAMM_PRICE %> копеек за штуку </li>
+            <li>Программки продаются по <%= SELLING_PRICE %> копеек</li>
+            <li>Доход от рекламы составляет <%= MARKETING_PROFIT %> рублей</li>
+        </ul>  
+    </div>
+    <div class="calculation-container">
+        <div class="choise-method">
+            <h3>Выберите критерий для расчета:</h3>
+            <select>
+                <option></option> 
+                <option id="walda">Вальда</option>
+                <option id="regret">Сэвиджа</option>
+                <option id="hurwitz">Гурвица</option>
+            </select>
+        </div>
+        <div id="first-step">
+            <form>
+                <h3></h3>
+                <p>Введите количество стратегий: </p>
+                <input id="strategies-count" type="number" min="1" max="10" required>
+                <button id="button-strategies">Создать таблицу посещаемости</button>
+                <div id="visitors"></div>
+                <p>Введите ожидаемый процент покупки программки:</p>
+                <input id="buyers-percent" type="number" min="1" max="100" required>
+                <button id="continue-step">Далее</button>
+            </form>
+        </div>
+        <div id="second-step">
+            <div class="score-table"></div> 
+        </div>  
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js" type="text/javascript"></script>
+<script src="javascripts/methods.js" type="text/javascript"></script> 

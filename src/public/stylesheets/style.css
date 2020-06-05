@@ -1,0 +1,350 @@
+body {
+  background-color: wheat; }
+
+.wrapper {
+  position: relative; }
+
+header {
+  position: absolute;
+  top: 40px;
+  left: 270px; }
+
+a {
+  text-decoration-color: #5a1a1e;
+  color: #781515; }
+
+h1 {
+  display: inline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  cursor: pointer; }
+
+.nav-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: 427px;
+  left: 67px; }
+  .nav-wrapper nav {
+    background-color: #5a1a1a; }
+  .nav-wrapper img {
+    display: inline; }
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  width: 1115px;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 25px; }
+  .main-navigation li {
+    color: white;
+    width: auto;
+    font-size: 25px; }
+  .main-navigation a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none; }
+    .main-navigation a:hover {
+      color: #ceb2b2; }
+
+.about-methods {
+  position: absolute;
+  width: 134px;
+  top: 100px;
+  right: 200px;
+  text-align: center; }
+  .about-methods a {
+    color: white;
+    text-decoration: underline; }
+
+.header-img {
+  display: block;
+  width: 100%; }
+
+.settlement-system {
+  position: absolute;
+  width: 147px;
+  top: 220px;
+  right: 200px;
+  text-align: center; }
+  .settlement-system a {
+    color: white;
+    text-decoration: underline; }
+
+.sign-in button {
+  position: absolute;
+  top: 15px;
+  font-weight: bold;
+  right: 15px;
+  width: 120px;
+  height: 35px;
+  background-color: #5a1a1a;
+  color: white;
+  border-radius: 4px;
+  border: solid 2px #5a1a1a; }
+  .sign-in button:hover {
+    background-color: rgba(90, 26, 26, 0.9);
+    border: none; }
+
+.sign-out button {
+  position: absolute;
+  top: 15px;
+  font-weight: bold;
+  right: 15px;
+  width: 120px;
+  height: 35px;
+  background-color: gray;
+  color: white;
+  border-radius: 4px;
+  border: solid 2px gray; }
+  .sign-out button:hover {
+    background-color: rgba(90, 26, 26, 0.9);
+    border: none; }
+  .sign-out button a {
+    color: white;
+    text-decoration-color: transparent; }
+
+.login-button:hover {
+  background-color: rgba(90, 26, 26, 0.9);
+  border: none; }
+
+.about-company-container {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 40px; }
+  .about-company-container h2 {
+    text-align: center; }
+  .about-company-container p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 45px;
+    text-align: center; }
+  .about-company-container img {
+    padding-left: 191px; }
+  .about-company-container span {
+    font-weight: bold; }
+
+.map-container {
+  width: 600px;
+  height: 400px;
+  padding-top: 40px;
+  margin: 0 auto; }
+
+.description p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-style: italic;
+  width: 800px; }
+  .description p span {
+    font-size: 32px;
+    color: #781515; }
+
+.theater-programms-container {
+  padding-top: 60px;
+  margin: 0 auto;
+  max-width: 700px; }
+  .theater-programms-container img {
+    display: block;
+    width: 100%; }
+
+input[type="text"] {
+  width: 260px;
+  height: 30px;
+  border-radius: 4px;
+  margin-top: 13px;
+  margin-bottom: 15px; }
+
+input[type="password"] {
+  width: 260px;
+  height: 30px;
+  border-radius: 4px; }
+
+.login-button {
+  margin-left: 83px;
+  width: 90px;
+  height: 30px;
+  background-color: #5a1a1a;
+  border: 2px solid #5a1a1a;
+  color: white;
+  margin-top: 20px;
+  border-radius: 3px; }
+
+.settlement-system button, .about-methods button {
+  height: 40px;
+  background-color: #5a1a1a;
+  border-radius: 3px;
+  border: none; }
+
+.modal {
+  max-width: 400px; }
+  .modal h2 {
+    color: #5a1a1a; }
+  .modal span {
+    font-weight: bold; }
+
+.calculation-container {
+  width: 50%;
+  height: 100%;
+  border: solid #5a1a1a 2px;
+  margin: 0 auto;
+  border-radius: 2px;
+  margin-bottom: 150px; }
+  .calculation-container input {
+    display: block;
+    border-radius: 3px;
+    width: 60px;
+    height: 19px;
+    margin: 0 auto;
+    border: solid #5a1a1a 2px; }
+  .calculation-container h3 {
+    text-align: center; }
+  .calculation-container table {
+    margin: 0 auto; }
+  .calculation-container button {
+    display: block;
+    background-color: #5a1a1a;
+    color: white;
+    width: 100px;
+    height: 36px;
+    border: solid #5a1a1a 2px;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .calculation-container select {
+    display: block;
+    width: 100px;
+    height: 30px;
+    border: solid #5a1a1a 2px;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-bottom: 60px; }
+
+.choise-method button {
+  width: 87px;
+  height: 30px;
+  margin-top: 55px;
+  margin-bottom: 15px; }
+
+#button-strategies {
+  width: 130px;
+  border-radius: 2px; }
+
+#button-strategies-regret {
+  width: 130px;
+  border-radius: 2px; }
+
+#button-strategies-hurwitz {
+  width: 130px;
+  border-radius: 2px; }
+
+#login-form {
+  max-width: 322px; }
+
+.instruction {
+  display: block;
+  margin-top: -193px;
+  margin-left: 330px;
+  margin-bottom: 75px; }
+  .instruction p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #781515; }
+  .instruction li {
+    line-height: 30px;
+    font-size: 18px; }
+
+#first-step {
+  display: none; }
+  #first-step p {
+    text-align: center; }
+
+.method-hurwitz-step-one p {
+  text-align: center; }
+
+.method-hurwitz-step-one button {
+  margin-bottom: 20px; }
+
+.footer-container {
+  position: absolute;
+  left: 228px; }
+
+.footer-background {
+  position: absolute;
+  left: 202px; }
+
+footer {
+  position: relative; }
+  footer h2 {
+    text-align: center;
+    color: #936F31; }
+  footer p {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    width: 221px;
+    margin-top: 0;
+    color: #781515; }
+  footer span {
+    font-weight: bold; }
+  footer .last-p {
+    position: absolute;
+    top: 60px;
+    left: 600px;
+    color: #936F31;
+    width: 367px;
+    font-size: 20px;
+    left: 541px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0; }
+    footer .last-p span {
+      font-size: 32px;
+      color: #781515;
+      line-height: 50px; }
+
+#second-step {
+  display: none; }
+
+.frame {
+  width: 800px;
+  height: 210px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+.score-table p {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.score-table table {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.more {
+  position: relative; }
+  .more:before {
+    content: url(../images/arrow.jpg);
+    display: block;
+    position: absolute;
+    left: -63px; }
+  .more:after {
+    content: url(../images/arrow.jpg);
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: -63px;
+    transform: scale(-1, 1); }
+
+.score-table table, .score-table thead {
+  border-collapse: collapse; }
+  .score-table table th, .score-table table td, .score-table thead th, .score-table thead td {
+    border: 2px solid #781515;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
